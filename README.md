@@ -1,7 +1,7 @@
 #  This website is built on HTML5, CSS3, JS
 
 ## This website has an email modal made with Javascript
-1. Whenever the user will try to leave the sitem the modal will appear to tell the user to subscribe for this site to stay updated.
+1. Whenever the user will try to leave the site the modal will appear to tell the user to subscribe for this site to stay updated.
 
 ### Accessibility was tried to improve 
 1. Improved Accessibility meeting the guidelines of WCAG 2.0
