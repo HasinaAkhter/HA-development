@@ -1,0 +1,328 @@
+/*******************************************
+           GENERAL
+********************************************/
+
+* {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgb(220, 220, 220);
+	font-family: 'Varela-Round', sans-serif;
+	font-size: 14px;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	border-radius: .7em;
+}
+
+
+/*******************************************
+HEADING/NAVIGATION/FOOTER
+********************************************/
+
+.main-nav {
+	margin-top: 15px;
+}
+
+.main-nav a {
+	display: block;
+	padding: 10px 15px;
+}
+
+.main-nav li {
+	list-style: none;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+.main-nav li:hover {
+	background: #fff;
+}
+
+.main-header {
+	height: 600px;
+	width: 100%;
+	background: #ccc url('../images/background.jpg')no-repeat center;
+	background-size: cover;
+	padding-top: .5em;
+	padding-bottom: .5em;
+	text-align: center;
+}
+
+.container {
+	padding-left: 1.2em;
+	padding-right: 1.2em;
+}
+
+.tagline {
+	background: lightcoral;
+	padding: 10px 15px;
+	border-radius: 5px;
+	margin-bottom: 10px;
+	font-size: 16px;
+	transition-property: border-radius;
+	transition-duration: .5s, .4s;
+}
+
+.tagline:hover {
+	background: #fff;
+	border-radius: .8em;
+}
+
+.main {
+	margin-top: 5px;
+	color: #fff;
+	text-transform: uppercase;
+}
+
+.wrap {
+	margin: 0 auto;
+	padding-top: 20px;
+	text-align: center;
+	padding-left: 0.8em;
+	padding-right: 0.8em;
+}
+
+p {
+	font-size: 20px;
+	line-height: 2.3;
+	text-align: justify;
+}
+
+
+h2 {
+	font-size: 2em;
+	color: green;
+	text-shadow: 2px 2px 2px #000;
+}
+
+h3 {
+	margin-top: 10px;
+	font-size: 1.5em;
+	color: rgb(101, 101, 170);
+	text-shadow: 2px 2px 2px #000;
+}
+
+.photo {
+	margin: 0 auto;
+	clear: both;
+	display: block;
+	max-width: 175px;
+	border-radius: 15%;
+
+}
+
+.main-footer {
+	padding: 1em 0;
+	clear: both;
+	background: rgb(208, 208, 208);
+	text-align: center;
+}
+
+.main-footer p {
+	text-align: center;
+	transform: skewX(5deg);
+}
+
+#portfolio {
+	width: 100%;
+	padding-top: 1em;
+	padding-bottom: 2.5em;
+	padding-left: 1em;
+	padding-right: 1em;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	background-color: #ccc;
+	border-bottom: 4px solid #000;
+	border-radius: 6px;
+}
+
+#portfolio:hover {
+	border-color: #ff99ff;
+}
+
+.click {
+	text-align: center;
+	text-transform: capitalize;
+	color: green;
+	font-weight: 800;
+	line-height: 1.3;
+}
+
+#gallery {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	overflow: hidden;
+}
+
+#gallery li {
+	float: left;
+	width: 100%;
+	margin: 1.5%;
+	padding-bottom: 5px;
+}
+
+#gallery li a p {
+	margin: -5px auto;
+	text-align: center;
+	background: lightcoral;
+	font-size: 1.5em;
+	line-height: 1.5;
+	color: #fff;
+}
+
+#gallery li p {
+	margin: -5px auto;
+	text-align: center;
+	background: ;
+	font-size: 1.5em;
+	line-height: 1.5;
+	color: #000;
+	width: 100%;
+}
+
+
+.imageGallery {
+	opacity: 1;
+}
+
+.imageGallery:hover {
+	opacity: .4;
+}
+
+
+/*LINKS*/
+
+a:link {
+	color: lightblue;
+}
+
+a:visited {
+	color: #fff;
+}
+
+a:hover {
+	color: purple;
+}
+
+
+/*Styling focus pseudo-class that targets keyboard accessibility*/
+
+a:focus,
+#about h2:focus,
+#contact h2:focus {
+	outline: 1px solid #000;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 320px) {
+	.main-header {
+		max-height: 380px;
+	}
+}
+
+@media (min-width: 769px) {
+
+	/*style the navigation and column layout for
+larger screens using media queries.*/
+	.container {
+		width: 90%;
+		margin: 0 auto;
+		/*Giving the container a width prevents the layout
+        from stretching too wide on larger screens, and setting the left 
+		and right margin values to the value auto centers the container 
+		in the browser.*/
+	}
+
+	.main-nav li {
+		border: 3px solid #fff;
+		border-radius: 10px 5%;
+	}
+
+	.main-nav {
+		float: right;
+	}
+
+	.main-nav li {
+		display: inline-block;
+		margin-left: 15px;
+		/*This will display the list items side by side 
+	  and create some separation between each navigation item.*/
+	}
+
+	.tagline {
+		font-size: 20px;
+	}
+
+	.main {
+		font-size: 3.25rem;
+		line-height: 1.3;
+		color: #fff;
+		margin-bottom: 15px;
+	}
+
+	.main-header {
+		max-height: 850px;
+	}
+
+	.main,
+	.tagline {
+		position: relative;
+		top: 200px;
+		left: 30px;
+	}
+
+	#gallery li {
+		width: 45%;
+	}
+
+	/* ---- Float clearfix ---- */
+	.clearfix::after {
+		content: " ";
+		display: table;
+		clear: both;
+	}
+
+	#about p,
+	#skills p,
+	#contact p {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	#portfolio {
+		width: 80%;
+	}
+}
+
+@media (min-width: 1024px) {
+	#gallery li {
+		width: 30.333%;
+	}
+
+	#gallery li:nth-child(4n) {
+		clear: left
+	}
+
+	.wrap {
+		max-width: 90%;
+	}
+}

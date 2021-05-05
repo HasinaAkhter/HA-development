@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio of Hasina Akhter</title>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style2.css">
+    <!--font awesome type icons-->
+     <link href='https://css.gg/css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>  
+
+<body>
+    <header class="main-header" id="#top">
+        <div class="container clearfix">
+            <ul class="main-nav">
+                <!--Adding Tabindex, the global attribute allows elements besides links and form elements to receive keyboard focus-->
+
+                <li><a href="#about" tabindex="0">About</a></li>
+                <li><a href="#portfolio" tabindex="0">Portfolio</a></li>
+                <li><a href="#contact" tabindex="0">Contact</a></li>
+            </ul>
+        </div>
+        <!--/container-->
+        <h1 class="main">HA Development <br> & Design<br></h1>
+        <br>
+        <!--portfolio link's role defined-->
+        <a class="tagline" href="#about" role="button" tabindex="0">Check out our work!</a>
+    </header>
+    <!--/.main-header-->
+
+    <main class="wrap">
+
+        <article id="about">
+            <h2 tabindex="0">WHAT WE DO</h2>
+
+            <ul id="gallery">
+                <li>
+                    <img src="images/frontend.jpg" alt="Front-end">
+                    <h3>FRONT-END DEVELOPMENT</h3><br>
+
+                    <p>Build responsive websites with optimal user experience that achieves your business goals</p>
+                </li>
+                <li>
+
+                    <img src="images/wordpress.jpg" alt="wordpress">
+                    <h3>WORDPRESS DEVELOPMENT</h3><br>
+                    <p class="">Build and maintain your business sites using popular WordPress themes </p>
+                </li>
+                <li>
+
+                    <img src="images/seoimg.jpg" alt="seo">
+                    <h3>SEO & ACCESSIBILITY</h3><br>
+                    <p class="">Make sure your websites are easy to find and accessible to a wide range of users </p>
+                </li>
+
+            </ul>
+
+
+        </article>
+        <!--/about-->
+        <br>
+        <br>
+
+        <section id="portfolio">
+            <h2>PORTFOLIO</h2>
+            <br>
+            <p class="click">Click on each image to view the project</p>
+            <br>
+            <ul id="gallery">
+                <li>
+                    <a class="imageGallery" href="https://taughanackfalls.netlify.app" target="_blank">
+                        <img class="fall" src="images/img1.jpg" alt="project1">
+                        <p>taughannockfalls</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="imageGallery" href="https://hasinaakhter.github.io/agoodlifeguideUp" target="_blank">
+                        <img class="guide" src="images/img2.jpg" alt="project2">
+                        <p>agoodlifeguide</p>
+                    </a>
+                </li>
+
+                <li>
+                    <a class="imageGallery" href="https://hasinaakhter.github.io/Todo-App/" target="_blank">
+                        <img class="app" src="images/todo.jpg" alt="project3">
+                        <p>todoapp</p>
+                    </a>
+                </li>
+        </ul>
+        </section>
+        <!--/portfolio-->
+        <br>
+        <br>
+        <article id="contact" class="box2">
+            <h2 tabindex="0">CONTACT</h2>
+            <br>
+            <p>
+                Want to work together? Please contact at
+                hadevelopment@gmail.com
+                <br>
+            </p>
+
+        </article>
+        <br>
+        <br>
+        <!--/contact-->
+    </main>
+    <!--/wrap-->
+
+    <!--email modal starting-->
+  <section class="email-modal ">
+    <div class="email-modal__close-btn">
+      <i class="gg-close"></i>
+    </div>
+    
+    <div class="email-modal__container">
+      <div class="email-modal__info"> 
+        <p class="email-modal__message">Stay Updated About Us<br>
+           by Joining Our Email-lists
+        </p>
+        <div class="email-modal__error-message">
+          Sorry this is not a valid email
+        </div>
+
+        <div class="email-modal__form-group ">
+          <input type="text" class="email-modal__input" placeholder="youremail@mail.com">
+          <button class="email-modal__button">Subscribe</button>
+        </div>
+        <div class="email-modal__decline-offer">Sorry, I'm not interested</div>
+      </div>  
+      <div class="email-thank ">
+        <div class="email-thank__title">
+          Thank You
+        </div>
+        <p class="email-thank__message">
+          Welcome to the community!
+        </p>
+      </div>
+    </div>
+  </section><!--email modal closing-->
+
+
+    <footer class="main-footer">
+
+        <h3>HA DEVELOPMENT & DESIGN</h3><br>
+
+        <img class="photo" src="images/brandlogo.jpg" alt="brandlogo">
+
+        <p class="copyright">copyright &copy;<span id="year"></span> HA development & Design All rights reserved.</p>
+        <a href="#top" aria-label="Go-to-top">
+            <i class="fa fa-arrow-circle-up" style="font-size:42px;color:coral; line-height: 1.5;"></i>
+        </a>
+    </footer>
+    <!--/footer-->
+    <script src="js/copyright.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
